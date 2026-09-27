@@ -4,6 +4,10 @@ services:
     container_name: jellyfin
     user: 1000:1000
     network_mode: 'host'
+    devices:
+      - /dev/dri:/dev/dri
+    group_add:
+      - "992"
     volumes:
       - ./config:/config
       - ./cache:/cache
