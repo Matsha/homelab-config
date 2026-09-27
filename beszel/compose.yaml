@@ -18,7 +18,7 @@ services:
       - /mnt/data/.beszel:/extra-filesystems/data:ro
     environment:
       LISTEN: 45876
-      KEY: "sssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILNbh2jUqUiZ9Ha8ngC1MlZd65MLUseG002aFx/F19VF"
+      KEY: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILNbh2jUqUiZ9Ha8ngC1MlZd65MLUseG002aFx/F19VF"
       TOKEN: "${BESZEL_TOKEN}"
       HUB_URL: "http://192.168.2.48:8090"
     restart: unless-stopped
