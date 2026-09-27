@@ -1,0 +1,11 @@
+# Ignore everything...
+*
+# ...but look inside folders
+!*/
+# Keep only these
+!.gitignore
+!README.md
+!**/compose.yaml
+!**/compose.yml
+!**/docker-compose.yml
+!**/.env.example
